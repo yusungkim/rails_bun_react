@@ -1,6 +1,80 @@
-<h1>Home</h1>
-<div data-controller="home">
+<div data-controller="home" class="bg-zinc-950 text-zinc-50 antialiased h-full w-full flex flex-col items-center justify-center">
+  <h1>Home</h1>
   <div id="root"></div>
+
+  <div class="max-w-3xl px-4 space-y-12 pb-32 pt-16">
+    <!-- Fish 1 -->
+    <div class="relative glow-capture">
+      <div
+        class="group bg-zinc-900/50 border-4 border-white/5 rounded-2xl p-10 shadow-lg shadow-black/80 flex md:flex-row flex-col flex-wrap md:items-start items-center md:justify-between justify-center gap-6 backdrop-blur-md glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.15]">
+        <div class="flex-1 md:order-1 order-2">
+          <p class="opacity-50">Tropical fish</p>
+          <h2 class="font-bold text-4xl tracking-tighter mb-3 glow:text-glow/[.15]">Banana Wrasse</h2>
+          <div class="md:prose-base prose-lg prose-zinc prose-invert text-opacity-90">
+            <p>The Banana Wrasse is known for its vibrant yellow color and elongated body, resembling a banana.</p>
+            <p>This active and playful fish thrives in tropical reef environments, often seen darting among corals and
+              rocks.</p>
+          </div>
+
+          <button
+            class="font-semibold px-6 bg-zinc-950/50 backdrop-blur-md py-3 rounded-xl text-white/90 border-2 border-white/10 mt-6 glow:ring-1 glow:border-glow glow:ring-glow">Learn
+            more</button>
+        </div>
+        <%= image_tag "fish-1.jpg", class: "max-w-sm rounded-full object-cover w-40 h-40 border-4 border-white/5 md:order-2 order-1 glow glow:ring-1 glow:border-glow/[.5] glow:ring-glow shadow-inner" %>
+      </div>
+      <div class="glow-overlay" style="--glow-color: #7c3aed"></div>
+    </div>
+
+    <!-- Fish 2 -->
+    <div class="relative glow-capture">
+      <div
+        class="bg-zinc-900/50 border-4 border-white/5 rounded-2xl p-10 shadow-lg shadow-black/80 flex md:flex-row flex-col flex-wrap md:items-start items-center md:justify-between justify-center gap-6 backdrop-blur-md glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.15]">
+        <div class="flex-1 md:order-1 order-2">
+          <p class="opacity-50">Tropical fish</p>
+          <h2 class="font-bold text-4xl tracking-tighter mb-3 glow:text-glow/[.15]">Anthia</h2>
+          <div class="md:prose-base prose-lg prose-zinc prose-invert text-opacity-90">
+            <p>Anthias fish are renowned for their dazzling, multi-hued scales, ranging from pinks and purples to
+              oranges
+              and yellows.</p>
+            <p>
+              They form dynamic, shimmering schools in coral reefs, adding a burst of color and life to the underwater
+              world.</p>
+          </div>
+          <button
+            class="font-semibold px-6 bg-zinc-950/50 backdrop-blur-md py-3 rounded-xl text-white/90 border-2 border-white/10 mt-6 glow:ring-1 glow:border-glow glow:ring-glow">Learn
+            more</button>
+        </div>
+
+        <%= image_tag "fish-2.jpg", class: "max-w-sm rounded-full object-cover w-40 h-40 border-4 border-white/5 md:order-2 order-1 glow glow:ring-1 glow:border-glow/[.5] glow:ring-glow shadow-inner" %>
+      </div>
+      <div class="glow-overlay" style="--glow-color: #f43f5e"></div>
+    </div>
+
+
+    <!-- Fish 3 -->
+    <div class="relative glow-capture">
+      <div
+        class="bg-zinc-900/50 border-4 border-white/5 rounded-2xl p-10 shadow-lg shadow-black/80 flex md:flex-row flex-col flex-wrap md:items-start items-center md:justify-between justify-center gap-6 backdrop-blur-md glow glow:ring-1 glow:border-glow glow:ring-glow glow:bg-glow/[.15]">
+        <div class="flex-1 md:order-1 order-2">
+          <p class="opacity-50">Tropical fish</p>
+          <h2 class="font-bold text-4xl tracking-tighter mb-3 glow:text-glow/[.15]">Lipstick Tang</h2>
+          <div class="md:prose-base prose-lg prose-zinc prose-invert text-opacity-90">
+            <p>The Lipstick Tang, distinct for its striking blue body and vivid red-orange lips, resembles a vibrant
+              splash
+              of lipstick
+              in the ocean. </p>
+            <p>This eye-catching fish is a favorite among reef enthusiasts, gracefully navigating through coral
+              gardens
+              with elegance.</p>
+          </div>
+          <button
+            class="font-semibold px-6 bg-zinc-950/50 backdrop-blur-md py-3 rounded-xl text-white/90 border-2 border-white/10 mt-6 glow:ring-1 glow:border-glow glow:ring-glow">Learn
+            more</button>
+        </div>
+
+        <%= image_tag "fish-3.jpg", class: "max-w-sm rounded-full object-cover w-40 h-40 border-4 border-white/5 md:order-2 order-1 glow glow:ring-1 glow:border-glow/[.5] glow:ring-glow shadow-inner" %>
+      </div>
+      <div class="glow-overlay" style="--glow-color: #0ea5e9"></div>
+    </div>
+  </div>
 </div>
-
-

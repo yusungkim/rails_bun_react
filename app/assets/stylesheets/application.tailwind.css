@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+:root {}
+
+.glow-overlay {
+  --glow-size: 25rem;
+
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+  opacity: var(--glow-opacity, 0);
+  mask: radial-gradient(
+    var(--glow-size) var(--glow-size) at var(--glow-x) var(--glow-y),
+    black 0%,
+    transparent 65%
+  );
+  transition: 400ms all ease;
+  will-change: mask;
+  background-color: color-mix(in srgb, var(--glow-color) 30%, transparent);
+  border: 2px solid color-mix(in srgb, var(--glow-color) 80%, white 20%);
+  border-radius: 1rem;
+}
